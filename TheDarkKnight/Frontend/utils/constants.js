@@ -71,24 +71,24 @@ try {
         validatorTaskContractMinimumBlock = 0;
     } else {
 
-        // Sepolia contract addresses
+        // Ethereum mainnet contract addresses
         usersContractAddress
-            = "0x95317F9EE94C3F35554c2b89971eb7b9052Deb9f";
+            = "0xc9D45163cEF5f6c9E97AbE57DcfdeF693585B056";
         theListContractAddress
-            = "0x7AA6FaB644B90b387a82269A6F3747b191aa29b0";
+            = "0xea11585C6B8961CDe38a8edEE432328E69689B42";
         hashTaskContractAddress
-            = "0xB4446ECC7D05a074ec5F8f3c17983787DDA5323D";
+            = "0xDFd1bE7B2F8628F89288EF7d65A1a28588315F8D";
         doubleHashTaskContractAddress
-            = "0x75d03c100dB5160B0876DB4480954b9eE985eB06";
+            = "0x96C397E47C672BAa7Ae13BAd34aDdfd18e895566";
         validatorTaskContractAddress
-            = "0x3C54aB5b0be84f0bbf17F834810Cb8Aafcf2bcc5";
+            = "0x76bc136117567f967816Bb4B1A7d77c325Fd19d0";
 
         // Sepolia contract creation block indices
-        usersContractMinimumBlock = 9192512;
-        theListContractMinimumBlock = 9192513;
-        hashTaskContractMinimumBlock = 9192514;
-        doubleHashTaskContractMinimumBlock = 9192515;
-        validatorTaskContractMinimumBlock = 9192516;
+        usersContractMinimumBlock = 24438298;
+        theListContractMinimumBlock = 24438483;
+        hashTaskContractMinimumBlock = 24438558;
+        doubleHashTaskContractMinimumBlock = 24438579;
+        validatorTaskContractMinimumBlock = 24438596;
     }
 }
 
