@@ -1,7 +1,6 @@
 import { ethers, keccak256 } from "../libs/ethers.min.js";
 import "../libs/jszip.min.js";
 import {
-    loadHeader,
     prefixHexBytes,
     debounce,
     replaceClass,
@@ -25,8 +24,6 @@ const fileUpload = document.getElementById('upload-file-button');
 const zipInput = document.getElementById('file-input');
 const fileName = document.getElementById('file-name');
 
-// Load the header button navigation functionality
-loadHeader();
 
 // Requirement addition variables
 let file;
@@ -76,7 +73,7 @@ addRequirementButton.addEventListener("click", async () => {
 
     // Return to requirements page after transaction addition
     transactionResponse.wait().then(async () => {
-        window.location.pathname = "/pages/requirements/viewRequirements.html";
+        window.location.pathname = "./pages/requirements/viewRequirements.html";
     });
 });
 
