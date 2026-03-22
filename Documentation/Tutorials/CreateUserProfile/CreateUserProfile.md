@@ -5,7 +5,7 @@ You should be completing this tutorial through either the online Sepolia testnet
 
 If you are using the Sepolia network, then you can use the online GitHub hosted Freelance Society website in the link below. But, if you are using a Localhost blockchain or prefer to locally self host the Freelance Society website on your local computer, then you should have the frontend server running and use the Localhost link below.
 
-Hosted Freelance Society website: [https://freelancesociety.app/index.html](https://freelancesociety.app/index.html)
+Hosted Freelance Society website: [https://spiderman303e24.github.io/FreelanceSociety/TheDarkKnight/Frontend/index.html](https://spiderman303e24.github.io/FreelanceSociety/TheDarkKnight/Frontend/index.html)
 
 Localhost Freelance Society website: [http://localhost:3000](http://localhost:3000)
 
