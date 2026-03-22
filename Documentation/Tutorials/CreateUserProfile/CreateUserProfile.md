@@ -23,7 +23,7 @@ If your wallet is connected to the website and is properly connected to your sel
 In the Links input you should input a base route to a website where you can add files and directories to route Freelance Society to data resources. Currently in GitHub, you can create an account for free and host files with some data and networking limitations. You can then create a repository and upload files for hosting. The link for that corresponding base route would then be "https<span></span>://raw.githubusercontent.com/&lt;YourUsername&gt;/&lt;YourRepository&gt;/&lt;YourBranch&gt;". If you would like to continue the tutorial without going through that process you should be able to use the link below, though you cannot edit the files.
 
 ###
-    https://base.freelancesociety.app
+    https://raw.githubusercontent.com/SpiderMan303e24/Base/main
 
 You may input any name in the Name input field.
 
