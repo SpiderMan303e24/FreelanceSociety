@@ -11,7 +11,8 @@ import {
     formatWei,
     getRequirementVersionData,
     getValidatorSubmissionStatus,
-    parseUserData
+    parseUserData,
+    urlNoTrailingSlash
 } from "../../utils/commonFunctions.js";
 import {
     THE_LIST_CONTRACT_ADDRESS,
@@ -782,7 +783,7 @@ async function searchUser() {
         // Try to read the link as a URL and upon failure continue to next link
         let userUrl = null;
         try {
-            userUrl = new URL(userLinksArray[i]);
+            userUrl = urlNoTrailingSlash(new URL(userLinksArray[i]));
         } catch (_) {
             continue;
         }
@@ -982,7 +983,7 @@ async function dataHashMatchFound(zipFile) {
     // Task content header
     taskJsonArea.textContent = "";
     const taskRequirementsHeader = document.createElement("h1");
-    taskRequirementsHeader.textContent = "Task Requirements";
+    taskRequirementsHeader.textContent = "Task Specifications";
     taskJsonArea.appendChild(taskRequirementsHeader);
 
     // Iterate over each requirement listed in the specifications, and for each

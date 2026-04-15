@@ -18,6 +18,7 @@
     <script src="./js/components/headerSection.js" type="module"></script>
     <script src="./js/components/walletMisconfigurationSection.js" type="module"></script>
     <script src="./js/requirements/requirement.js" type="module" defer></script>
+    <script src="./js/components/helpSection.js" type="module"></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                 <!-- Requirement data -->
                 <div id="requirement-id" class="left-align padding">Requirement ID: X-X</div>
                 <div id="requirement-hash" class="left-align padding text-content-return">Requirement Hash:<br>-</div>
-                <div id="requirement-user" class="left-align padding text-content-return">Requirement Manager Address:<br>-</div>
+                <div id="requirement-user" class="left-align padding text-content-return">Manager Address:<br>-</div>
                 <div id="discover-section">
 
                     <!-- Discover type section -->
@@ -101,8 +102,7 @@
 
                 <!-- Redirect buttons -->
                 <div id="view-proposals-button" class="border-button redirectable padding margin">View Proposals</div>
-                <div id="view-other-versions-button" class="border-button redirectable padding margin">View Other
-                    versions</div>
+                <div id="view-other-versions-button" class="border-button redirectable padding margin">View Versions</div>
                 <div id="propose-update-button" class="border-button redirectable padding margin">Add Requirement</div>
 
                 <!-- Requirement zip file tree -->
@@ -110,6 +110,11 @@
                     class="file-tree">No Requirement Data - Discover Requirement Or Upload Locally</textarea>
             </div>
 
+            <!-- Help -->
+            <div id="help-container">
+                <help-section helpCollection="Requirement"></help-section>
+            </div>
+            
             <!-- Footer space -->
             <div id="footer-space"></div>
         </div>

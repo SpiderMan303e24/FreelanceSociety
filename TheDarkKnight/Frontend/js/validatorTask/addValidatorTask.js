@@ -7,7 +7,8 @@ import {
     searchByIndexVersion,
     formatTaskJson,
     getRequirementVersionData,
-    addClass
+    addClass,
+    urlNoTrailingSlash
 } from "../../utils/commonFunctions.js";
 import {
     THE_LIST_CONTRACT_ADDRESS,
@@ -104,9 +105,9 @@ deadlineInput.addEventListener("input", () => {
 // Updates checkbox check mark variable and display
 blockScheduleButton.addEventListener("click", () => {
     if (isBlockSchedule) {
-        blockScheduleButton.textContent = "OFF";
+        blockScheduleButton.textContent = "FALSE";
     } else {
-        blockScheduleButton.textContent = "ON";
+        blockScheduleButton.textContent = "TRUE";
     }
     isBlockSchedule = !isBlockSchedule;
 });
@@ -292,7 +293,7 @@ async function tryMatchFile(zipHash) {
     let downloadUrls = [];
     for (let i = 0; i < linksSplit.length; i++) {
         try {
-            const nextUrl = new URL(linksSplit[i]);
+            const nextUrl = urlNoTrailingSlash(new URL(linksSplit[i]));
             downloadUrls.push(nextUrl);
         } catch (error) {
             continue;
@@ -484,7 +485,7 @@ async function validateTaskFile(arrayBuffer) {
     // Task content header
     taskJsonArea.textContent = "";
     const taskRequirementsHeader = document.createElement("h1");
-    taskRequirementsHeader.textContent = "Task Requirements";
+    taskRequirementsHeader.textContent = "Task Specifications";
     taskJsonArea.appendChild(taskRequirementsHeader);
 
     // Iterate over each requirement listed in the specifications, and for each
